@@ -19,7 +19,7 @@
 
 int main() {
     int num_of_studs;
-    int arr[1000001];
+    int *arr;
     int f_idx, m_idx;
     int i, tmp, j;
     int fm, level;
@@ -28,7 +28,8 @@ int main() {
     if (num_of_studs <= 0) {
         goto err;
     }
-
+    
+    arr = malloc(sizeof(int *) * num_of_studs);
     if (!arr) {
         goto err;
     }
