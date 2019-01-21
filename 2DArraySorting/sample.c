@@ -29,10 +29,6 @@ int main() {
         goto err;
     }
 
-    /*if (num_of_studs > 100000) {
-        num_of_studs = 100000;
-    }*/
-    //arr = malloc(sizeof(int *) * num_of_studs);
     if (!arr) {
         goto err;
     }
